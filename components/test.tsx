@@ -1,3 +1,4 @@
+import {SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss} from 'react-icons/si';
 export default function TestPage() {
   return (
     <section className="min-h-screen bg-black text-white px-6">
@@ -8,7 +9,7 @@ export default function TestPage() {
 
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full bg-green-900/40 px-4 py-2 text-sm text-green-400">
-            ⭐ React Developer & UI/UX Enthusiast | Based in Kastoria GR
+            ⭐ React Developer & UI/UX  | Based in Kastoria GR
           </div>
 
           {/* Heading */}
@@ -51,10 +52,10 @@ export default function TestPage() {
 
           {/* Tech Icons */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur px-6 py-3 rounded-full flex gap-4 text-green-400">
-            <span>⚛️</span>
-            <span>Next</span>
-            <span>JS</span>
-            <span>Tailwind</span>
+            <span> <SiReact /> </span>
+            <span><SiNextdotjs /></span>
+            <span><SiNodedotjs /></span>
+            <span><SiTailwindcss/></span>
           </div>
         </div>
 
