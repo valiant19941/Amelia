@@ -44,9 +44,9 @@ export default function TestPage() {
             <img
               src="/1.jpg"
               alt="Developer"
-              width={420}
-              height={520}
-              className="rounded-2xl object-cover shadow-2xl" 
+              width={400}
+              height={400}
+              className="rounded-2xl w-full h-full object-cover shadow-2xl" 
             />
           </div>
 
