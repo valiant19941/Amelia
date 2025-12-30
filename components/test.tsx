@@ -14,7 +14,7 @@ export default function TestPage() {
 
           {/* Heading */}
           <h1 className="text-5xl xl:text-6xl font-bold leading-tight">
-            React.js Developer  Portfolio
+            React.js <span className='text-green-400'>Developer</span>  Portfolio
           </h1>
 
           {/* Description */}
@@ -31,7 +31,7 @@ export default function TestPage() {
 
           {/* Stats Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8">
-            <Stat number="3+" label="Years Experience" />
+            <Stat number="3+"  label="Years Experience" />
             <Stat number="50+" label="Projects Completed" />
             <Stat number="15+" label="Technologies" />
             <Stat number="98%" label="Client Satisfaction" />
@@ -40,18 +40,21 @@ export default function TestPage() {
 
         {/* RIGHT SIDE */}
         <div className="relative">
-          <div className="rounded-2xl overflow-hidden border border-green-500/20">
-            <img
-              src="/1.jpg"
-              alt="Developer"
-              width={400}
-              height={400}
-              className="rounded-2xl w-full h-full object-cover shadow-2xl" 
-            />
+          <div className="relative rounded-2xl overflow-hidden aspect-4/5 max-w[500px] ml-auto group  ">
+          <div className='absolute inset-0 rounded-2xl overflow-hidden'>
+            <div className='absolute inset-[-2px] bg-linear-to-r from-primary/0 via-primary/30 to-primary/0 opacity-50'>
+            <div className='relative rounded-2xl overflow-hidden m-[1px] h-[calc(100%-2px)]'>
+              <img src="/1.jpg" alt="Developer" className="w-full h-full object-cover" />
+
+            </div>
+
+            </div>
+          </div>
+           
           </div>
 
           {/* Tech Icons */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur px-6 py-3 rounded-full flex gap-4 text-green-400">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur px-6 py-3 rounded-full flex gap-4 items-center text-green-400">
             <span> <SiReact /> </span>
             <span><SiNextdotjs /></span>
             <span><SiNodedotjs /></span>
